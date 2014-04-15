@@ -11,7 +11,7 @@ script:
   
 notifications:
   email:
-      recipients:
-         - chandra.sengupta@mycuratio.com
-	 - info@technicise.com
+    recipients:
+      - chandra.sengupta@mycuratio.com
+      - info@technicise.com
          
