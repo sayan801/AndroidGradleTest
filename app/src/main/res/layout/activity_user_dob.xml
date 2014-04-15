@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+   <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dobdetails"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp" 
+        android:gravity="center_horizontal" />
+   
+   
+    <RelativeLayout
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1" 
+    android:gravity="center"
+    android:layout_marginTop="5dp">
+    
+     
+     <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+         />
+     
+     <TextView
+        android:id="@+id/textViewUserDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        />
+     
+     
+</RelativeLayout>
+
+ 
+   
+    <Button
+     android:id="@+id/ButtonUserDOB" 
+	 android:layout_width="match_parent"
+	 android:layout_height="60dp"
+	 android:text="@string/next"
+	 android:background="@drawable/customised_button"
+	 android:textSize="20sp"
+	 android:onClick="gotopasscode"
+	 android:clickable="true"
+	 android:textColor="@android:color/white"
+	  />
+   
+
+</LinearLayout>

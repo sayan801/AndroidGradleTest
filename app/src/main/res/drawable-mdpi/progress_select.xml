@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:pivotX="50%" android:pivotY="50%" android:fromDegrees="0"
+    android:toDegrees="360">
+     <layer-list >
+    <item>
+        <shape android:shape="oval">
+           
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+    <item android:bottom="5dp" android:top="5dp" android:left="5dp" android:right="5dp">
+    
+        <shape android:shape="oval">
+            <size android:height="20dp"
+                  android:width="20dp" />
+            
+            <solid android:color="#54d66a"/>
+        </shape>
+    </item>
+</layer-list> 
+    
+</rotate> 

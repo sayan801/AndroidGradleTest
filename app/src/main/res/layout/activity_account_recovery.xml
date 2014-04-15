@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="@android:color/white">
+
+
+    	<RelativeLayout 
+    android:id="@+id/layout2" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="top"
+    android:background="@android:color/white"
+    > 
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:background="@drawable/left_top"
+        android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="@drawable/right_top"
+            android:contentDescription="@string/app_name" />
+   	    
+    
+	</RelativeLayout> 
+	
+   	<LinearLayout
+    android:layout_width="250dp"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp" 
+    android:layout_gravity="center">
+   	
+   	     
+   	     <EditText
+        android:id="@+id/UserEmailToRecovery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:background="@drawable/customised_edit_text"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:textColorHint="#98EAC1"
+        android:paddingLeft="20dp"
+        >
+        <requestFocus />
+       </EditText>  
+   	    
+   	   <EditText
+        android:id="@+id/UserPasswordToRecovery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:background="@drawable/customised_edit_text"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:textColorHint="#98EAC1"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        >
+     
+       </EditText>  
+        <EditText
+        android:id="@+id/UserConfirmPasswordToRecovery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:background="@drawable/customised_edit_text"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:textColorHint="#98EAC1"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        >
+       
+   	   </EditText>
+       </LinearLayout> 	
+       
+   	<Button
+     android:id="@+id/ButtonNext"        
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:text="@string/next"
+     android:background="@drawable/customised_button" 
+     android:textSize="20sp"
+     android:textColor="@android:color/white"
+      />
+	
+    </LinearLayout>	

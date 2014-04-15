@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"  
+    android:background="@drawable/bgdialog" 
+    android:orientation="vertical">
+    
+    
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/custom_email_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+  
+   
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/custom_email_alert"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="18sp"
+       />
+    
+    
+    
+    <EditText
+        android:id="@+id/UserEmailToActive"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:background="@drawable/customised_edit_text"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:textColorHint="#98EAC1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="7dp"
+        >
+        <requestFocus />
+       </EditText>
+    
+     <Button
+        android:id="@+id/ButtonSendEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/send"
+        android:textColor="@android:color/white" 
+        android:background="#54d66a"
+        android:layout_marginTop="10dp"
+        />
+     
+    
+    
+  </LinearLayout>  
+  
+
